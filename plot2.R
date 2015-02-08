@@ -36,8 +36,7 @@ power <- tbl_df(power) %>%
 # open the PNG output file
 
 png(filename = "plot2.png",
-    width = 504, height = 504, units = "px")
-#    width = 480, height = 480, units = "px")
+    width = 480, height = 480, units = "px")
 
 # we could alter margins here -- thought I had to do so to match the image
 # shown in the assignment.  However, that one is 504x504 with margins
