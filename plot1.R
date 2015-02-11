@@ -39,6 +39,18 @@ library(dplyr)
 power <- tbl_df(power) %>%
 	 mutate(datetime = dmy_hms(paste(Date,Time)))
 
+#
+# interesting thing done by @goestreicher, but i haven't tested to see how it
+# changes or improves the minute accuracy of emulation of the 'grading graphs'
+#
+# oldLocale = Sys.getlocale( category = "LC_TIME" )
+## set a default one for the duration of this script. Using "C" seems to
+## yield the  best results.
+#Sys.setlocale( category = "LC_TIME", locale = "C" )
+#
+## then at the end of the file, restore the locale
+# Sys.setlocale( category = "LC_TIME", locale = oldLocale )
+
 # open the PNG output file
 
 png(filename = "plot1.png",
