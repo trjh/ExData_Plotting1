@@ -76,7 +76,8 @@ with(power, {
 })
 # add the legend
 legend("topright", lty = 1, col = c("black", "blue", "red"),
-       legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+       legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
+       bty = "n")
 
 # col 2, row 1
 #	3. a line plot showing minute-averaged voltage (in volt) 
