@@ -20,6 +20,12 @@ power <- read.table(
     stringsAsFactors = FALSE
     )
 
+# might have also been useful to include:
+# set '?' values to 'NA'
+#   na.strings = '?',
+#   colClasses=c('character','character','numeric','numeric',
+#   'numeric','numeric','numeric','numeric','numeric'),
+
 # ensure we've read what we expected to read
 if (!identical(as.numeric(dim(power)), c(2880, 9))) {
     stop("expected dataset to have dimensions 2880 x 9")
