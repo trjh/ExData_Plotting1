@@ -52,6 +52,12 @@ hist(as.numeric(power$Global_active_power), col = "red",
      xlab = "Global Active Power (kilowatts)"
 )
 
+# another interesting method
+# hist.info <- hist(power$Global_active_power)
+# plot(hist.info, col="red",
+#     xlim=c(0,6),ylim=c(0,1200),
+#     xlab="Global Active Power (kilowatts)",main="Global Active Power")
+
 # close the PNG file -- plot will now be written
 
 dev.off()
